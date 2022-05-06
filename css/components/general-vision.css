@@ -1,0 +1,137 @@
+/* General vision */
+.section-general-vision {
+  padding-top: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-general-vision__title {
+  margin-bottom: 5rem;
+  width: 100%;
+}
+
+.section-general-vision__title--gradient-border {
+  width: 40%;
+  margin: auto;
+  height: 3rem;
+  background: linear-gradient(to right, #d99d70, #050530);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section-general-vision__container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.section-general-vision__card {
+  max-width: 32.6rem;
+  box-shadow: 0 1rem 3rem rgb(119, 119, 119, 0.4);
+  transition: all 0.3s;
+}
+
+.section-general-vision__card:hover {
+  transform: translateY(5px);
+}
+
+.section-general-vision__card--img {
+  max-width: 32.6rem;
+  max-height: 19.9rem;
+}
+
+.section-general-vision__card--info {
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+
+.section-general-vision__card--info ul li {
+  font-size: 1.4rem;
+  margin-left: 2rem;
+  line-height: 2rem;
+}
+
+.section-general-vision__card--info ul li:not(:last-child) {
+  margin-bottom: 1.1rem;
+}
+
+/* Media queries */
+
+@media (max-width: 1060px) {
+  .section-general-vision {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 880px) {
+  .section-general-vision__card--info {
+    padding: 3rem;
+  }
+
+  .section-general-vision__card--info ul li {
+    font-size: 2rem;
+  }
+
+  .section-general-vision__card--info ul li:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .section-general-vision {
+    height: auto;
+    /* 15 rem que tiene la sección anterior - 2rem de padding */
+    margin-top: 13rem;
+  }
+
+  .section-general-vision__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5rem;
+    justify-items: center;
+  }
+
+  .section-general-vision__card:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 630px) {
+  .section-general-vision__title--gradient-border {
+    width: 60%;
+  }
+}
+
+@media (max-width: 550px) {
+  .section-general-vision__container {
+    grid-template-columns: 1fr;
+  }
+
+  .section-general-vision__card {
+    width: 80%;
+    max-width: 80%;
+  }
+
+  .section-general-vision__card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: initial;
+  }
+}
+
+@media (max-width: 410px) {
+  .section-general-vision__title--gradient-border {
+    width: 80%;
+  }
+
+  .section-general-vision__card--info h3,
+  .section-general-vision__card--info ul li {
+    line-height: 1.5;
+  }
+}
+
+/* End General vision */

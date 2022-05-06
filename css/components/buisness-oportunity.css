@@ -1,0 +1,70 @@
+/* Buisness oportunity */
+
+.section-buisness-oportunity {
+  position: relative;
+  display: flex;
+  height: 100vh;
+}
+
+.section-buisness-oportunity__img {
+  background-image: url("/assets/images/buisness-oportunity.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  flex-basis: 40%;
+}
+
+.section-buisness-oportunity__info {
+  align-self: center;
+  flex-grow: 1;
+}
+
+.section-buisness-oportunity__info--absolute-container {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.section-buisness-oportunity__info--list-item {
+  text-transform: uppercase;
+}
+
+.section-buisness-oportunity__info--list-item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+/* Media queries */
+
+@media (max-width: 1060px) {
+  .section-buisness-oportunity {
+    margin-top: 15rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: min-content;
+  }
+
+  .section-buisness-oportunity__img {
+    display: none;
+  }
+
+  .section-buisness-oportunity__info--absolute-container {
+    position: relative;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-50%);
+  }
+
+  .section-buisness-oportunity__info--absolute-container h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .section-buisness-oportunity {
+    padding: 0 3rem;
+  }
+}
+
+/* End Buisness oportunity */

@@ -1,0 +1,51 @@
+/* Utilities */
+
+.m-auto {
+  margin: auto !important;
+}
+
+.m-b-none {
+  margin-bottom: 0 !important;
+}
+
+.m-b-l {
+  margin-bottom: 4rem !important;
+}
+
+.m-t-xxl {
+  margin-top: 10rem !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.color-danger {
+  color: #c61919 !important;
+}
+
+.f-w-bold {
+  font-weight: 600 !important;
+}
+
+.titlecase {
+  text-transform: lowercase !important;
+}
+
+.w-40 {
+  max-width: 40% !important;
+}
+
+.font-size-xxl {
+  font-size: 5.4rem;
+}
+
+/* Media queries */
+
+@media (max-width: 400px) {
+  .w-40 {
+    max-width: 90% !important;
+  }
+}
+
+/* End utilities */
