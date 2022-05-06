@@ -30,9 +30,17 @@
 }
 
 .section-general-vision__card {
-  max-width: 32.6rem;
+  width: 25%;
+  max-width: 25%;
   box-shadow: 0 1rem 3rem rgb(119, 119, 119, 0.4);
   transition: all 0.3s;
+}
+
+.section-general-vision__card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: initial;
 }
 
 .section-general-vision__card:hover {
@@ -91,6 +99,16 @@
   .section-general-vision__card:last-child {
     grid-column: 1 / -1;
   }
+
+  .section-general-vision__card {
+    width: 75%;
+    max-width: 75%;
+  }
+
+  .section-general-vision__card:last-child {
+    width: 37.5%;
+    max-width: 37.5%;
+  }
 }
 
 @media (max-width: 630px) {
@@ -104,7 +122,8 @@
     grid-template-columns: 1fr;
   }
 
-  .section-general-vision__card {
+  .section-general-vision__card,
+  .section-general-vision__card:last-child {
     width: 80%;
     max-width: 80%;
   }
