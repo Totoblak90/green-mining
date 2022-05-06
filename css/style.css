@@ -89,4 +89,10 @@ li[class$="--list-item"]:not(:last-child) {
     font-size: 43.75%;
   }
 }
+
+@media (max-width: 500px) {
+  section {
+    margin-bottom: 5rem;
+  }
+}
 /* End General media queries */

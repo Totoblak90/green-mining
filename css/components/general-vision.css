@@ -1,11 +1,11 @@
 /* General vision */
 .section-general-vision {
   padding-top: 2rem;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10rem;
 }
 
 .section-general-vision__title {
@@ -59,12 +59,6 @@
 }
 
 /* Media queries */
-
-@media (max-width: 1060px) {
-  .section-general-vision {
-    height: 75vh;
-  }
-}
 
 @media (max-width: 880px) {
   .section-general-vision__card--info {

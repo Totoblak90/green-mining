@@ -3,15 +3,15 @@
 .section-buisness-oportunity {
   position: relative;
   display: flex;
-  height: 100vh;
+  margin-bottom: 10rem;
 }
 
 .section-buisness-oportunity__img {
-  background-image: url("/assets/images/buisness-oportunity.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left;
   flex-basis: 40%;
+}
+
+.section-buisness-oportunity__img img {
+  max-width: 100%;
 }
 
 .section-buisness-oportunity__info {

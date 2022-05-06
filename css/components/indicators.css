@@ -1,12 +1,12 @@
 /* Indicators */
 
 .section-indicators {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10rem;
+  margin-bottom: 10rem;
 }
 
 .section-indicators__title {
@@ -38,15 +38,9 @@
 
 /* Media queries */
 
-@media (max-width: 1060px) {
-  .section-indicators {
-    height: 75vh;
-  }
-}
-
 @media (max-width: 780px) {
   .section-indicators__table {
-    max-width: 80%;
+    max-width: 90%;
   }
   .section-indicators__table table {
     font-size: 2rem;

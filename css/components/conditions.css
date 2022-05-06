@@ -2,16 +2,15 @@
 .section-conditions {
   position: relative;
   display: flex;
-  height: 100vh;
+  height: auto;
   gap: 5%;
 }
-
 .section-conditions__img {
-  background-image: url("/assets/images/condiciones-comerciales.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
   flex-basis: 40%;
+}
+.section-conditions__img img {
+  max-width: 100%;
+  height: 100%;
 }
 
 .section-conditions__info {
@@ -21,15 +20,10 @@
 
 /* Media queries */
 
-@media (max-width: 1060px) {
-  .section-conditions {
-    height: 75vh;
-  }
-}
-
 @media (max-width: 950px) {
   .section-conditions__info {
     flex-basis: 60%;
+    padding-right: 2rem;
   }
 }
 
@@ -49,19 +43,24 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .section-conditions {
-    /* height: auto; */
     flex-direction: column-reverse;
+    gap: 2rem;
   }
 
   .section-conditions__img {
     flex-basis: 100%;
   }
 
+  .section-conditions__img img {
+    width: 100%;
+  }
+
   .section-conditions__info {
     padding: 0 2rem;
     flex-basis: 100%;
+    margin-bottom: 1rem;
   }
 
   .section-conditions__info h2 {
